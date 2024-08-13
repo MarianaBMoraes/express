@@ -24,7 +24,7 @@ const store = (body) => {
 
 const index = () => db;
 
-const show = id => db.find((el) => el.id == id);
+const show = (id) => db.find((el) => el.id == id);
 
 const update = (body, id) => {
   const indice = db.findIndex((el) => el.id == id);
